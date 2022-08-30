@@ -7,8 +7,8 @@ import com.mena.userscenter.common.ErrorCode;
 import com.mena.userscenter.common.ResultUtils;
 import com.mena.userscenter.exception.BusinessException;
 import com.mena.userscenter.model.domain.User;
-import com.mena.userscenter.model.domain.request.UserLoginRequest;
-import com.mena.userscenter.model.domain.request.UserRegisterRequest;
+import com.mena.userscenter.model.request.UserLoginRequest;
+import com.mena.userscenter.model.request.UserRegisterRequest;
 import com.mena.userscenter.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -23,7 +23,6 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
-import static com.mena.userscenter.constant.UserConstant.ADMIN_ROLE;
 import static com.mena.userscenter.constant.UserConstant.USER_LOGIN_STATE;
 
 /**
